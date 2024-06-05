@@ -13,7 +13,7 @@ function NewsDisplay(){
     const handleSubmit = (event)=>{
         event.preventDefault();
 
-        fetch(`https://newsapi.org/v2/everything?q=${category}&from=2024-02-25&apiKey=e0242cf49d88409eb5fb1bb3d9fb39f4`)
+        fetch(`https://newsapi.org/v2/everything?q=${category}&from=2024-03-30&apiKey=09e90f2d863844f291ede550a53ab4f5`)
         .then((response)=>response.json())
         .then((result)=>{
             setArticles(result.articles);
